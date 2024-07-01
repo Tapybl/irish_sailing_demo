@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish Sailing - Demo</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .overlay {
+            background: #4da550;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    pointer-events: none; /* Allow clicks to pass through to the iframe */
+}
+    </style>
+</head>
+<body>
+    <header style="padding:1rem 2rem">
+        <img src="./img/irish_logo.png" alt="" style=" width: 140px; ">
+    </header>
+    <div class="container">
+        <div class="overlay"></div>
+        <iframe src="https://staging.edu.tapybl.com/auth/login" id="tapybl" frameborder="0" style=" width: 100%; height: calc(100vh - 110px); "></iframe>
+    </div>
+</body>
+</html>
